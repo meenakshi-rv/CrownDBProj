@@ -61,5 +61,6 @@
   <ItemGroup>
     <Build Include="FactTable.sql" />
     <Build Include="DimElectricCounterbalFL.sql" />
+    <Build Include="DimICcounterbalFL.sql" />
   </ItemGroup>
 </Project>
