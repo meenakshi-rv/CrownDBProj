@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="9/11/2022 12:06:45 AM"
@@ -11,8 +11,8 @@
   DTS:LocaleID="3081"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="1"
-  DTS:VersionGUID="{A31C657C-D2F4-4B9A-A708-6958817B2DE7}">
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{4FD23853-A6B7-4FEB-AD15-8E714731302E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,11 +25,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=localhost;User ID=meenakshi;Initial Catalog=Crown;Provider=SQLNCLI11.1;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=localhost;User ID=meenakshi;Initial Catalog=Crown;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAq1EsC9/fvUyjwivJVl2gmQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADLVhf6DlVc29kU3YwZudfOM4pY25GHZ3pe6mVIPvTfNwAAAAAOgAAAAAIAACAAAAAg4BE6KLNwx0gB8ScK3N82VtyekVCVD8OcJukTt5RGXyAAAAC9+XEW9X3QTeCw8G/FsaESlS+/jFGbMvZCa7/GfhjLkkAAAADcqnrQ1ZkWVniBv0bJey9GiZWZ17x4REufSzcN+cqZG8lzhG8hzzm4fqSh4OrP2ixfdjply9GDlAT0t5E/ZNIz</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAq1EsC9/fvUyjwivJVl2gmQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAhvgxZYjMiKC5H3mrlMjXph9SYf82L9P5vOykkSGhOVgAAAAAOgAAAAAIAACAAAAB1hdxPeVF7UMRooXzJNWZ8/zEhsNdwv5nXzQKtZWuqhiAAAACu9CIATrhpgLcXPiJaBMTOvASVr3sJ+EOOBcJIbIUS8UAAAADPS49k/fCd9Ul6SL0ffOagJnG7PszGUcwJc8Meqoij7X5xnlBeQu4WaAyYr3lMIzY0qnYyiRNA+0sZIyXZ8w41</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -66,7 +66,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[final].[FactTable]</property>
+                  name="OpenRowset">[dbo].[FactTable]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -389,7 +389,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE DB Source">
+    design-time-name="Package\Data Flow Task\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -402,7 +402,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE DB Destination">
+    design-time-name="Package\Data Flow Task\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
