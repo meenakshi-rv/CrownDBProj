@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [dbo].[DimElectricCounterbalFL]
 (
 	[Id] INT NOT NULL PRIMARY KEY,
-	[Type] NVARCHAR(30)
+	[Type] NVARCHAR(50)
 )
