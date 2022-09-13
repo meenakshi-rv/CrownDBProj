@@ -63,5 +63,6 @@
     <Build Include="DimElectricCounterbalFL.sql" />
     <Build Include="DimICcounterbalFL.sql" />
     <Build Include="DimManUpOrderPickers.sql" />
+    <Build Include="DimReachTrucks.sql" />
   </ItemGroup>
 </Project>
