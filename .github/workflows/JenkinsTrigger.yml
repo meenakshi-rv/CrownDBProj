@@ -15,7 +15,7 @@ jobs:
     - name: trigger single Job
       uses: appleboy/jenkins-action@v0.0.2
       with:
-        url: "https://a8e4-203-214-84-2.au.ngrok.io/"
+        url: "https://029e-203-214-84-2.au.ngrok.io/"
         user: "meenakshi-rv"
         token: ${{ secrets.JENKINS_TOKEN }}
         job: "Crown_JenkinsTest"
