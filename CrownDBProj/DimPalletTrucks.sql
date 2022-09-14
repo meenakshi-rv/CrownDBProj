@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [dbo].[DimPalletTrucks]
 (
 	[Id] INT NOT NULL PRIMARY KEY,
-	[Type] NVARCHAR(60)
+	[Type] NVARCHAR(70)
 )
