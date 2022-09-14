@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [dbo].[DimReachTrucks]
 (
 	[Id] INT NOT NULL PRIMARY KEY,
-	[Type] NVARCHAR(50)
+	[Type] NVARCHAR(70)
 )

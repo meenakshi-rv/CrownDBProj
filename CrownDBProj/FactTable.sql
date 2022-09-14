@@ -7,7 +7,7 @@
 
 CREATE TABLE [dbo].[FactTable](
 	[EquipmentId] [nvarchar](50) NOT NULL,
-	[Type] [nvarchar](50) NULL,
+	[Type] [nvarchar](80) NULL,
 PRIMARY KEY CLUSTERED 
 (
 	[EquipmentId] ASC

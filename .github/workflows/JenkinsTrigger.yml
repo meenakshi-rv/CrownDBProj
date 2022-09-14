@@ -1,0 +1,21 @@
+name: trigger jenkins job
+on:
+  pull_request_target:
+    branches:
+      - master
+  push:
+    branches:
+      - master
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - name: trigger single Job
+      uses: appleboy/jenkins-action@v0.0.2
+      with:
+        url: "https://029e-203-214-84-2.au.ngrok.io/"
+        user: "meenakshi-rv"
+        token: ${{ secrets.JENKINS_TOKEN }}
+        job: "Crown_JenkinsTest"
